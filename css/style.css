@@ -1,0 +1,204 @@
+/* Animation */
+
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+body {
+    background: #003b59;
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+    line-height: 1.3;
+    -webkit-font-smoothing: antialiased;
+}
+
+#animations {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+#main_body {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    padding: 0;
+    width: 100%;
+    text-align: center;
+}
+
+.body_class img {
+    width: 10vw;
+    border-radius: 50%;
+}
+
+.body_class a {
+    font-size: 1.3rem;
+    padding: 10px;
+}
+
+.body_class a:hover {
+    font-size: 1.2rem;
+    color: white;
+    cursor: pointer;
+    transition: 0.4s;
+}
+nav{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    height: 80px;
+    line-height: 80px;
+    z-index: 111;
+ 
+}
+.logo{
+    display: flex;
+    font-size: 40px;
+    font-weight: 800;
+    color: #3d535f;
+    letter-spacing: 3px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+b{
+    font-size: 70px;
+    color: black;
+    text-decoration: none;
+}
+.download1 {
+    display: block;
+	padding: 15px;
+	cursor: pointer;
+	text-decoration: none;
+	width: 320px;
+	text-align: center;
+	border-radius: 5px;
+	font-size: 20px;
+}
+.game{
+    text-decoration: none;
+    color: white;
+    font-size: 150px;
+}
+.navItems{
+    display: flex;
+}
+.navItems li{
+    list-style: none;
+    margin: 0 15px;
+}
+.navItems li a{
+    font-size: 25px;
+    color: #3d535f;
+    letter-spacing: 3px;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+.navItems li:hover a{
+    color: #003b59;
+}
+.links a{
+    font-size: 30px;
+    color: #3d535f;
+    margin: 25px 10px;
+}
+.wrapper{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    padding: 0 10%;
+    overflow: hidden;
+}
+.cols{
+    width: 50%;
+}
+.topline{
+    display: block;
+    position: relative;
+    font-size: relative;
+    letter-spacing: 5px;
+    color: #3d535f;
+}
+.topline::after{
+    position: absolute;
+    content: '';
+    height: 4px;
+    width: 45px;
+    bottom: 10px;
+    background-color: #003b59;
+}
+h1{
+    display: block;
+    font-size: 7em;
+    font-weight: 900;
+    color: #3d535f;
+}
+.multiText{
+    color: #003b59;
+    text-decoration: capitalize;
+}
+p{
+    display: block;
+    width: 90%;
+    font-size: 1.2em;
+    color: #3d535f;
+}
+.btns{
+    width: 100%;
+    position: relative;
+    left: 150px;
+}
+button{
+    outline: none;
+    border: none;
+    cursor: pointer;
+    font-size: 25px;
+    font-weight: 400;
+    color: #FFf;
+    background-color: #3d535f;
+    padding: 8px 14px;
+    margin: 40px 5px;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+    box-shadow: 0 15px 10px rgba(0, 0, 0, 0.4);
+}
+button:hover{
+    background-color: #003b59;
+}
+
+/* Responsiveness via screen widths */
+
+@media screen and (max-width: 768px) {
+    .body_class img {
+        width: 30%;
+        border-radius: 50%;
+    }
+    .body_class a {
+        font-size: 1.3rem;
+        padding: 0px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .body_class img {
+        width: 25%;
+        border-radius: 50%;
+    }
+    .body_class a {
+        font-size: 1.3rem;
+        padding: 4px;
+    }
+}
